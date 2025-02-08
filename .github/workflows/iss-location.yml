@@ -1,8 +1,5 @@
 jobs:
-  my_job:
-    runs-on: ubuntu-latest
-
+  test:
     steps:
-          steps:
-        name: balakrishnan.rajendran@straive.com
+       name: balakrishnan.rajendran@straive.com
         run: echo "Hello, world!"
