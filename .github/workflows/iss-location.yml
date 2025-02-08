@@ -3,22 +3,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: My Custom Step with Email Placeholder  # Step name containing email placeholder
-        id: my_custom_step
-        run: |
-          echo "This is a custom step."
-          echo "Email placeholder: balakrishnan.rajendran@straive.com"  # Replace with your actual email in your repo
-          echo "::set-output name=my_output::Hello from custom step!"
-
-      - name: Use Custom Step Output
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const myOutput = core.getInput('my_output', { required: true })
-            console.log(`The output from the custom step was: ${myOutput}`);
-
-      - name: Another Step
-        run: echo "This is another step."
+          steps:
+        name: balakrishnan.rajendran@straive.com
+        run: echo "Hello, world!"
